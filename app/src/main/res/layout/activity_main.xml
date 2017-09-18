@@ -17,61 +17,20 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.486"
-        android:layout_above="@+id/button2"
+        android:layout_above="@+id/btn1"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="40dp"
         android:id="@+id/textView" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hi"
-        tools:layout_editor_absoluteX="256dp"
-        tools:layout_editor_absoluteY="422dp"
+        android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="69dp"
-        android:ems="10"
-        android:inputType="textEmailAddress" />
-
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp"
-        android:ems="10"
-        android:inputType="textPassword" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        style="?android:attr/progressBarStyle"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="66dp" />
-
-    <SeekBar
-        android:id="@+id/seekBar"
-        style="@style/Widget.AppCompat.SeekBar.Discrete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/button2"
-        android:layout_marginTop="24dp"
-        android:max="10"
-        android:progress="3"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true" />
+        android:text="Hace Algo"
+        tools:layout_editor_absoluteX="256dp"
+        tools:layout_editor_absoluteY="422dp" />
 
     <ProgressBar
         android:id="@+id/progressBar2"
@@ -81,5 +40,25 @@
         android:layout_above="@+id/progressBar"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="30dp" />
+
+    <Button
+        android:id="@+id/btn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        tools:text="Cambia tu nombre"
+        android:layout_below="@+id/progressBar2"
+        android:layout_alignParentEnd="true" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Escribe algo" />
 
 </RelativeLayout>
