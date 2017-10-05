@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hola Mon!</string>
+    <string name="text">Hola Mon!!</string>
+    <string name="btnChange">Canviar</string>
+    <string name="btnCopy">Copiar</string>
+</resources>
