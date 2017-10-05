@@ -1,5 +1,6 @@
 package kelvinlt.helloworld;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -39,28 +40,33 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-//        if(opcion=true){
-//            btn.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    textView.setText("Hola");
-//                    opcion=false;
-//                }
-//            });
-//        }
-//        if(opcion=false){
-//            btn.setOnClickListener(new View.OnClickListener() {
-//                @Override
-//                public void onClick(View v) {
-//                    textView.setText("Adios");
-//                    opcion=true;
-//                }
-//            });
-//        }
-
-
-
-
-
+        btn1.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+                startActivity(intent);
+                return false;
+            }
+        });
+    }
+    @Override protected void onStart(){
+        super.onStart();
+        Log.d("flx","onStart()");
+    }
+    @Override protected void onResume(){
+        super.onResume();
+        Log.d("flx","onResume()");
+    }
+    @Override protected void onPause(){
+        super.onPause();
+        Log.d("flx","onPause()");
+    }
+    @Override protected void onStop(){
+        super.onStop();
+        Log.d("flx","onStop()");
+    }
+    @Override protected void onDestroy(){
+        super.onDestroy();
+        Log.d("flx","onDestroy()");
     }
 }

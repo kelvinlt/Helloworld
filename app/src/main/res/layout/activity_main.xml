@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
+        android:text="@string/btnChange"
         tools:layout_editor_absoluteX="256dp"
         tools:layout_editor_absoluteY="422dp"
         tools:text="@string/btnChange" />
@@ -47,7 +48,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_below="@+id/progressBar2"
-        android:text="Button"
+        android:text="@string/btnCopy"
         tools:text="@string/btnCopy" />
 
     <EditText
